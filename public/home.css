@@ -1,0 +1,176 @@
+.contents .home-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.home .left-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side .inside-upper {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+.inside-upper .post-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inside-upper .mention-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.inside-upper .mention-section .mention-all-btn {
+    padding: 6px 17px;
+}
+
+textarea {
+    padding: 10px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.left-side .inside-lower {
+    width: 100%;
+    height: 100%;
+    background-color: #fdfdfd;
+}
+
+.left-side .table-container{
+    width: 100%;
+    height: 100%;
+}
+
+.home .right-side {
+    width: 100%;
+    padding: 20px;
+}
+
+.right-side .view-announcement-post-container {
+    display: flex;
+}
+
+.right-side .view-announcement-post-container div {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+}
+
+.right-side .post-title {
+    color: #000;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right-side .posted-section {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+}
+
+.right-side .announcement-section {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.right-side .posted_announce_container {
+    border: 1px solid #000;
+    background-color: #3282fb;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.right-side span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+.right-side .name_status {
+    width: 100%;
+}
+
+.right-side .close_date_time {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.right-side .close_date {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right-side .date {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+.right-side .time {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    height: 100%;
+}
+.right-side .close {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: end;
+}
+
+.right-side .close_date .close i:hover {
+    color: rgb(249, 70, 112);
+}
+
+.right-side .name_status_date {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-side .content_upper {
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+.right-side .content_lower {
+    display: flex;
+    justify-content: end;
+}
+
+.right-side .announcement_container {
+    border: 1px solid #000;
+    background-color: #3282fb;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.right-side .div_time_date {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

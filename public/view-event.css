@@ -1,0 +1,35 @@
+.view-event .event-text {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.view-event .event-text span {
+    font-size: 18px;
+}
+
+.view-event .event-posted-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 610px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.view-event .event_posted_container {
+    width: 100%;
+    background-color: #5585ff;
+    border: 1px solid #000;
+    margin: 5px 0;
+    padding: 20px 80px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.view-event .div_date {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}

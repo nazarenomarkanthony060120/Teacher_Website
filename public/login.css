@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('login-bg.png');
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 360px;
+    margin: 8% auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.login-container .logo {
+    width: 100%;
+    padding: 20px;
+}
+
+.login-container .logo img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.login-container .logo span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    padding: 0 10px;
+}
+
+.login-container .login-title {
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-container .login-body {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.login-body .input-form {
+    padding: 5px;
+    text-align: center;
+}
+
+.login-body .input-form input {
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.login-body .input-form .password {
+    margin-left: -32px;
+}
+
+.login-body .input-form input:hover {
+    background-color: #eeeeee;
+}
+
+.login-body .input-form input[type=text]:focus, input[type=password]:focus {
+    outline: 2px solid #00f;  
+    border: none;
+    padding: 7px;
+}
+
+.btn {
+    margin: 40px 0;
+    background-color: #00f;
+    color: #fff;
+    width: 200px;
+    border-radius: 15px;
+}

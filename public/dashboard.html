@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logout.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contents.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="grade.css">
+    <link rel="stylesheet" href="view-student.css">
+    <link rel="stylesheet" href="view-event.css">
+    <link rel="stylesheet" href="attendance.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="left-navbar">
+            <div class="logo-container d-flex flex-column align-items-center">
+                <span class="system-title my-3">Blessed Trinity System</span>
+                <img src="school_logo.png" alt="logo" style="width: 50px; border-radius: 100%;">
+                <span class="my-2" style="font-family: 'Ubuntu', sans-serif;" id="teacher-name">Hello, Teacher</span>
+            </div>
+            <nav class="navbar-containers my-4" style="color: #fff; border-top: 2px solid gray;">
+                <ul class="d-flex flex-column align-items-center" style="margin: 0; padding: 0;">
+                    <li data-li="home" style="width: 256px; list-style-type: none; padding: 15px 0; text-align: center;">
+                        <i class="fa-solid fa-house"></i>
+                        <a class="mx-3" href="#" style="color: #fff;">Home</a>
+                    </li>
+                    <li data-li="grade" style="width: 256px; list-style-type: none; padding: 15px 0; text-align: center;">
+                        <i class="fa-solid fa-list"  style="margin-left: -5px;"></i>
+                        <a href="#" style="color: #fff;">Grade</a>
+                    </li>
+                    <li data-li="view-student" style="width: 256px; list-style-type: none; padding: 15px 0; text-align: center;">
+                        <i class="fa-solid fa-users-viewfinder" style="margin-left: 45px;"></i>
+                        <a class="mx-3" href="#" style="color: #fff;">View Pupils</a>
+                    </li>
+                    <li data-li="attendance" style="width: 256px; list-style-type: none; padding: 15px 0; text-align: center;">
+                        <i class="fa-solid fa-user" style="margin-left: 37px;"></i>
+                        <a href="#" style="color: #fff;">Attendance</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contents">
+            <div class="logout-parent">
+                <span>Logout
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </span>
+            </div>
+            <div class="title-section">
+                <span>Home</span>
+                <span id="student-list-update-title" class="mx-2" style="color: rgb(0, 157, 255);"></span>
+            </div>
+            <div class="item home">
+                <div class="home-content">
+                    <div class="left-side">
+                        <div class="inside-upper">
+                            <div class="post-section">
+                                <textarea name="post" id="post-text-area" cols="65" rows="6" placeholder="Post here!"></textarea>
+                                <button id="post-btn" class="btn btn-primary">Post</button>
+                            </div>
+                            <div class="mention-section">
+                                <button id="mention-parents" class="btn btn-primary">Mention</button>
+                                <textarea name="post" id="mentioned-text-area" cols="50" rows="2" placeholder="Mentioned Here!" disabled></textarea>
+                                <button class="mention-all-btn btn btn-primary">All</button>
+                            </div>
+                        </div>
+                        <div class="inside-lower" style="display: none;">
+                            <div class="table-container">
+                                <table class="metion-table table table-striped table-hover">
+                                    <thead class="text-center">
+                                        <th>No</th>
+                                        <th>Name</th>
+                                        <th>Mention</th>
+                                    </thead>
+                                    <tbody class="mention-table-body">
+    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="view-announcement-post-container">
+                            <span class="post-title">Post</span>
+                            <div>
+                                <button class="view-announcement-btn btn btn-primary">Announcement</button>
+                            </div>
+                        </div>
+                        <div class="posted-section">
+                        </div>
+                        <div class="announcement-section" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item grade" style="display: none;">
+                <div class="grade-section" style="display: block;">
+                    <div class="search-div my-2">
+                        <label for="search-student-grade">Search:</label>
+                        <input type="text" class="mx-2" placeholder="Search Name" id="search-student-grade">
+                    </div>
+                    <div class="table-container">
+                        <table class="student-name table table-striped table-hover">
+                            <thead class="text-center">
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Options</th>
+                            </thead>
+                            <tbody class="student-grade-body text-center">
+    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="view-student-grade-div" style="display: none;">
+                    <div class="d-flex py-2 mx-4">
+                        <div class="span-student-name">
+                            <span>Student:</span>
+                            <span class="name mx-2" style="font-weight: bold; text-transform: uppercase;"></span>
+                        </div>
+                        <div class="back-btn-div">
+                            <button id="back-btn" class="btn btn-primary">Back</button>
+                            <button id="add-grade" class="btn btn-danger">Add Grade</button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="table table-striped table-hover text-center">
+                            <thead>
+                                <th>No.</th>
+                                <th>Subject</th>
+                                <th>1st</th>
+                                <th>2nd</th>
+                                <th>3rd</th>
+                                <th>4th</th>
+                            </thead>
+                            <tbody class="view-student-grade-body">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="view-student-subject-div" style="display: none;">
+                    <div class="back-view-grade-div">
+                        <div class="back-div">
+                            <button class="back-btn btn btn-primary">Back</button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="table table-striped table-hover">
+                            <thead class="text-center">
+                                <th>No.</th>
+                                <th>Teacher</th>
+                                <th>Subject</th>
+                                <th>Option</th>
+                            </thead>
+                            <tbody class="student-subject-body text-center">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="add-student-grade-div" style="display: none;">
+                    <div class="add-student-grade-box">
+                        <div class="add-student-grade-title d-flex justify-content-center">
+                            <span></span>
+                        </div>
+                        <div class="add-student-grade-body">
+                            <div class="grading my-1">
+                                <label for="1st-grading">1st Grade:</label>
+                                <input type="number" class="input" placeholder="First Grading" id="1st-grading" value="0">
+                            </div>
+                            <div class="grading my-1">
+                                <label for="2nd-grading">2nd Grade:</label>
+                                <input type="number" class="input" placeholder="First Grading" id="2nd-grading" value="0">
+                            </div>
+                            <div class="grading my-1">
+                                <label for="3rd-grading">3rd Grade:</label>
+                                <input type="number" class="input" placeholder="First Grading" id="3rd-grading" value="0">
+                            </div>
+                            <div class="grading my-1">
+                                <label for="4th-grading">4th Grade:</label>
+                                <input type="number" class="input" placeholder="First Grading" id="4th-grading" value="0">
+                            </div>
+                            <div class="add-close-btn my-3">
+                                <button id="add-grade" class="btn btn-primary">Add</button>
+                                <button id="close-grade" class="btn btn-danger">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item view-student" style="display: none;">
+                <div class="view-student-container">
+                    <div class="search-student d-flex justify-content-end align-items-center my-2 mx-3">
+                        <label for="search-student-name">Search:</label>
+                        <input type="text" class="mx-2" id="search-student-name" placeholder="Search Name">
+                    </div>
+                    <div class="table-container my-3">
+                        <table class="table table-hover table-striped text-center">
+                            <thead>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Grade</th>
+                                <th>Address</th>
+                                <th></th>
+                            </thead>
+                            <tbody class="view-student-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="student-info-container" style="display: none;">
+                    <div class="student-info">
+                        <div class="logo-student-info-title-container">
+                            <div class="logo">
+                                <img src="school_logo.png" alt="logo">
+                            </div>
+                            
+                            <div class="student-info-title-container">
+                                <span>Student Information</span>
+                                <span id="school-year">SY: 2022-2023</span>
+                            </div>
+                        </div>
+                        <div class="form-student-info">
+                            <div class="date-enrolled-age-on-june-container my-3">
+                                <div class="date-enrolled-text-container">
+                                    <span>Date Enrolled:</span>
+                                    <div class="date-enrolled-container">
+                                        <b><span id="date-enrolled"></span></b> 
+                                    </div>
+                                </div>
+                                <div class="age-on-june-text-container">
+                                    <span>Age on June:</span>
+                                    <div class="age-on-june-container">
+                                        <b><span id="age-on-june"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-container my-3">
+                                <div>
+                                    <span>Name:</span>
+                                </div>
+                                <div class="name-text-container">
+                                    <div class="surname-first-name-middle-name-container">
+                                        <div class="surname-container">
+                                            <b><span id="surname"></span></b>
+                                        </div>
+                                        <div class="first-name-container">
+                                            <b><span id="f-name"></span></b>
+                                        </div>
+                                        <div class="middle-name-container">
+                                            <b><span id="m-name"></span></b>
+                                        </div>
+                                    </div>
+                                    <div class="surname-first-name-middle-name-text-container">
+                                        <div class="surname-text-container">
+                                            <span>(Surname)</span>  
+                                        </div>
+                                        <div class="first-name-text-container">
+                                            <span>(First Name)</span>   
+                                        </div>
+                                        <div class="middle-name-text-container">
+                                            <span>(Middle Name)</span>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date-of-birth-place-of-birth-age-sex-container my-3">
+                                <div class="date-of-birth-text-container">
+                                    <span>Date of Birth:</span>
+                                    <div class="date-of-birth-container">
+                                        <b><span id="date-of-birth"></span></b>
+                                    </div>
+                                </div>
+                                <div class="place-of-birth-text-container">
+                                    <span>Place of Birth:</span>
+                                    <div class="place-of-birth-container">
+                                        <b><span id="place-of-birth"></span></b>
+                                    </div>
+                                </div>
+                                <div class="age-text-container">
+                                    <span>Age:</span>
+                                    <div class="age-container">
+                                        <b><span id="age"></span></b>
+                                    </div>
+                                </div>
+                                <div class="sex-text-container">
+                                    <span>Sex:</span>
+                                    <div class="sex-container">
+                                        <b><span id="sex"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-address-contact-no-religion-container my-3">
+                                <div class="home-address-text-container">
+                                    <span>Home Address:</span>
+                                    <div class="home-address-container">
+                                        <b><span id="home-address"></span></b>
+                                    </div>
+                                </div>
+                                <div class="contact-text-container">
+                                    <span>Contact No/s:</span>
+                                    <div class="contact-container">
+                                        <b><span id="contact-no"></span></b>
+                                    </div>
+                                </div>
+                                <div class="religion-text-container">
+                                    <span>Religion:</span>
+                                    <div class="religion-container">
+                                        <b><span id="religion"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="school-last-attended-address-container my-3">
+                                <div class="school-last-attended-text-container">
+                                    <span>School Last Attended:</span>
+                                    <div class="school-last-attended-container">
+                                        <b><span id="school-last-attended"></span></b>
+                                    </div>
+                                </div>
+                                <div class="address-text-container">
+                                    <span>Address:</span>
+                                    <div class="address-container">
+                                        <b><span id="address"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="name-of-father-occupation-contact-no-container my-3">
+                                <div class="parent-text-container">
+                                    <span>Name of Father:</span>
+                                    <div class="parent-container">
+                                        <b><span id="name-of-father"></span></b>
+                                    </div>
+                                </div>
+                                <div class="occupation-text-container">
+                                    <span>Occupation:</span>
+                                    <div class="occupation-container">
+                                        <b><span id="father-occupation"></span></b>
+                                    </div>
+                                </div>
+                                <div class="contact-no-text-container">
+                                    <span>Contact #:</span>
+                                    <div class="contact-no-container">
+                                        <b><span id="father-contact-no"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-of-mother-occupation-contact-no-container my-3">
+                                <div class="parent-text-container">
+                                    <span>Name of Mother:</span>
+                                    <div class="parent-container">
+                                        <b><span id="name-of-mother"></span></b>
+                                    </div>
+                                </div>
+                                <div class="occupation-text-container">
+                                    <span>Occupation:</span>
+                                    <div class="occupation-container">
+                                        <b><span id="mother-occupation"></span></b>
+                                    </div>
+                                </div>
+                                <div class="contact-no-text-container">
+                                    <span>Contact #:</span>
+                                    <div class="contact-no-container">
+                                        <b><span id="mother-contact-no"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>Name of Guardian & Contact No. if not living with the parents:</span>
+                            <div class="name-relationship-contact-no-tel-cell my-3">
+                                <div class="guardian-name-text-container">
+                                    <span>Name:</span>
+                                    <div class="guardian-name-container">
+                                        <b><span id="guardian-name"></span></b>
+                                    </div>
+                                </div>
+                                <div class="relationship-text-container">
+                                    <span>Relationship:</span>
+                                    <div class="relationship-container">
+                                        <b><span id="relationship"></span></b>
+                                    </div>
+                                </div>
+                                <div class="tel-text-container">
+                                    <span>Tel. #:</span>
+                                    <div class="tel-container">
+                                        <b><span id="tel"></span></b>
+                                    </div>
+                                </div>
+                                <div class="cell-no-text-container">
+                                    <span>Cell #:</span>
+                                    <div class="cell-no-container">
+                                        <b><span id="cell-no"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grade-status-text-container">
+                                <div class="grade-text-input">
+                                    <span>Grade:</span>
+                                    <div class="grade-container">
+                                        <b><span id="grade"></span></b>
+                                    </div>
+                                </div>
+                                <div class="status-text-input">
+                                    <span>Status:</span>
+                                    <div class="status-container">
+                                        <b><span id="status"></span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-btn">
+                                <button id="back-student-info" class="btn btn-danger">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item attendance" style="display: none;">
+                <div class="attendance-container" style="display: block">
+                    <div class="search-text-input-container">           
+                        <label for="search">Search:</label>
+                        <input type="text" placeholder="Search Name" id="search" name="search">
+                    </div>
+                    <div class="table-container text-center">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Option</th>
+                            </thead>
+                            <tbody class="attendance-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="attendance-student-container" style="display: none;">
+                    <div class="student-name-search-input-container">
+                        <div class="student-name">
+                            <span>Student:</span>
+                            <b><span id="student-name"></span></b>
+                        </div>
+                        <div class="search-student">
+                            <label for="search-student-name">Search:</label>
+                            <input type="text" class="mx-2" id="search" placeholder="Date">
+                        </div>
+                    </div>
+                    <div class="back-attendance-present-absent-container">
+                        <div class="back">
+                            <button class="btn btn-primary" id="back">Back</button>
+                        </div>
+                        <div class="attendance-present-absent">
+                            <div class="attendance-present-container">
+                                <label for="attendance-container">Present:</label>
+                                <input type="text" id="attedance-present" name="attendance-present" value="0" readonly>
+                            </div>
+                            <div class="attendance-absent-container">
+                                <label for="attendance-container">Absent:</label>
+                                <input type="text" id="attedance-absent" name="attendance-absent" value="0" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attendance-student-table text-center">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody class="attendance-student-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="module" src="home.js"></script>
+    <script type="module" src="grade.js"></script>
+    <script type="module" src="view-student.js"></script>
+    <script type="module" src="view-event.js"></script>
+    <script type="module" src="attendance.js"></script>
+    <script type="module" src="logout.js"></script>
+    <script src="nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

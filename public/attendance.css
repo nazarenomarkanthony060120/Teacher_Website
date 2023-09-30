@@ -1,0 +1,55 @@
+.attendance .search-text-input-container {  
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.attendance .search-text-input-container > * {
+    margin: 0 5px;
+}
+
+.attendance .search-text-input-container input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+.attendance .attendance-student-container .student-name-search-input-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.attendance .attendance-student-container .student-name-search-input-container input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+.attendance .back-attendance-present-absent-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.attendance .back-attendance-present-absent-container .attendance-present-absent {
+    display: flex;
+    justify-content: end;
+}
+
+.attendance .back-attendance-present-absent-container .attendance-present-absent > div {
+    margin: 0 10px;
+}
+
+.attendance .back-attendance-present-absent-container .attendance-present-absent > div > input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.attendance .attendance-student-container .attendance-student-tbody .td_date_time {
+    text-align: center;
+}

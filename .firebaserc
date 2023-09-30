@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "btes-system"
+  },
+  "targets": {
+    "btes-system": {
+      "hosting": {
+        "es": [
+          "btes-teacher"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

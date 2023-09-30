@@ -1,0 +1,123 @@
+.contents .grade {
+    width: 100%;
+    height: 100%;
+}
+
+.grade .back-view-grade-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.grade .back-div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+}
+
+.grade .view-grade-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.grade .grade-section .table-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /* overflow-y: scroll; */
+}
+
+.grade .search-div {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: end;
+}
+
+.grade .search-div input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+.grade .view-student-subject-div .table-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /* overflow-y: scroll; */
+}
+
+.grade .view-student-grade-div .table-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    /* overflow-y: scroll; */
+}
+
+.grade .add-student-grade-div {
+    width: 100%;
+    height: 100%;
+}
+
+.grade .add-student-grade-box {
+    background-color: #fdfdfd;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 3% auto;
+}
+
+.grade .add-student-grade-title {
+    width: 100%;
+    height: 100%;
+    background-color: #fb0000;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.grade .add-student-grade-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grade .add-student-grade-div .btn {
+    padding: 5px 20px;
+}
+
+.grade .view-student-grade-div {
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+    padding: 9px;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.grade .span-student-name {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.grade .back-btn-div {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.grade .back-btn-div button {
+    margin: 0 10px;
+}

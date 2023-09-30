@@ -1,0 +1,273 @@
+.view-student .please-check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-student .admission-requirements {
+    padding: 0 50px;
+}
+
+
+
+<div class="student-info-container" style="display: none;">
+                    <div class="student-info">
+                        <div class="logo-student-info-title-container">
+                            <div>
+                                <img src="/images/school_logo.png" alt="logo">
+                            </div>
+                            <div class="student-info-title-container">
+                                <span>Student Information</span>
+                                <span id="school-year">SY: 2022-2023</span>
+                            </div>
+                        </div>
+                        <div class="form-student-info">
+                            <div class="date-enrolled-age-on-june-container my-3">
+                                <div class="date-enrolled-container">
+                                    <span>Date Enrolled:</span>
+                                    <b><span id="date-enrolled">Date Enrolled</span></b> 
+                                </div>
+                                <div class="age-on-june-container">
+                                    <span>Age on June:</span>
+                                    <b><span id="age-on-june">Age on June</span></b>
+                                </div>
+                            </div>
+                            <div class="name-container my-3">
+                                <div>
+                                    <span>Name:</span>
+                                </div>
+                                <div class="name-text-container">
+                                    <div class="surname-first-name-middle-name-container">
+                                        <div class="surname-container">
+                                            <b><span id="surname">Nazareno</span></b>
+                                        </div>
+                                        <div class="first-name-container">
+                                            <b><span id="f-name">Mark Anthony</span></b>
+                                        </div>
+                                        <div class="middle-name-container">
+                                            <b><span id="m-name">B</span></b>
+                                        </div>
+                                    </div>
+                                    <div class="surname-first-name-middle-name-text-container">
+                                        <div class="surname-text-container">
+                                            <span>(Surname)</span>  
+                                        </div>
+                                        <div class="first-name-text-container">
+                                            <span>(First Name)</span>   
+                                        </div>
+                                        <div class="middle-name-text-container">
+                                            <span>(Middle Name)</span>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date-of-birth-place-of-birth-age-sex-container my-3">
+                                <div>
+                                    <span>Date of Birth:</span>
+                                    <b><span class="date-of-birth">November 11, 2000</span></b>
+                                </div>
+                                <div>
+                                    <span>Place of Birth:</span>
+                                    <b><span class="place-of-birth">Talibon, Bohol</span></b>
+                                </div>
+                                <div>
+                                    <span>Age:</span>
+                                    <b><span class="age">22</span></b>
+                                </div>
+                                <div>
+                                    <span>Sex:</span>
+                                    <b><span class="sex">M</span></b>
+                                </div>
+                            </div>
+                            <div class="home-address-contact-no-religion-container my-3">
+                                <div>
+                                    <span>Home Address:</span>
+                                    <b><span class="home-address">Tanghaligue, Talibon</span></b>
+                                </div>
+                                <div>
+                                    <span>Contact No/s:</span>
+                                    <b><span class="contact-no">09123456789</span></b>
+                                </div>
+                                <div>
+                                    <span>Religion:</span>
+                                    <b><span class="religion">Catholic</span></b>
+                                </div>
+                            </div>
+                            <div class="school-last-attended-address-container my-3">
+                                <div>
+                                    <span>School Last Attended:</span>
+                                    <b><span class="school-last-attended">BTES</span></b>
+                                </div>
+                                <div>
+                                    <span>Address:</span>
+                                    <b><span class="address">Talibon Bohol</span></b>
+                                </div>
+                            </div>
+                            <div class="grade-level-in-the-previous-school-honor-received-container my-3">
+                                <div>
+                                    <span>Grade Level in the previous school:</span>
+                                    <b><span class="grade-level-in-the-previous-school">3</span></b>
+                                </div>
+                                <div>
+                                    <span>Honor/s Received (if any):</span>
+                                    <b><span class="honor-received">Honesty</span></b>
+                                </div>
+                            </div>
+                            <div class="name-of-father-occupation-contact-no my-3">
+                                <div>
+                                    <span>Name of Father:</span>
+                                    <b><span class="name-of-father">Mark anthony b. nazareno</span></b>
+                                </div>
+                                <div>
+                                    <span>Occupation:</span>
+                                    <b><span class="father-occupation">Programmer</span></b>
+                                </div>
+                                <div>
+                                    <span>Contact #:</span>
+                                    <b><span class="father-contact-no">09123456789</span></b>
+                                </div>
+                            </div>
+                            <div class="name-of-mother-occupation-contact-no my-3">
+                                <div>
+                                    <span>Name of Mother:</span>
+                                    <b><span class="name-of-mother">Jane Ludivese</span></b>
+                                </div>
+                                <div>
+                                    <span>Occupation:</span>
+                                    <b><span class="mother-occupation">Programmer</span></b>
+                                </div>
+                                <div>
+                                    <span>Contact #:</span>
+                                    <b><span class="mother-contact-no">09123456789</span></b>
+                                </div>
+                            </div>
+                            <span>Name of Guardian & Contact No. if not living with the parents:</span>
+                            <div class="name-relationship-contact-no-tel-cell my-3">
+                                <div>
+                                    <span>Name:</span>
+                                    <b><span class="guardian-name">Mark Anthony Nazareno</span></b>
+                                </div>
+                                <div>
+                                    <span>Relationship:</span>
+                                    <b><span class="relationship">Kaila</span></b>
+                                </div>
+                                <div>
+                                    <span>Contact Nos.: Tel.:</span>
+                                    <b><span class="tel">555 555 555</span></b>
+                                </div>
+                                <div>
+                                    <span>Cell #:</span>
+                                    <b><span class="cell-no">091234567889</span></b>
+                                </div>
+                            </div>
+                            <div class="please-check my-3">
+                                <div>
+                                    <span>Please check:</span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="new-pupil">
+                                        <label class="form-check-label" for="new-pupil">New Pupil</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="nursery">
+                                        <label class="form-check-label" for="nursery">Nursery</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="new-pupil-grade">
+                                        <label class="form-check-label" for="new-pupil-grade">Grade:</label>
+                                        <b><span class="pupil-grade">2</span></b>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="old-pupil">
+                                        <label class="form-check-label" for="old-pupil">Old Pupil</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="kender-1">
+                                        <label class="form-check-label" for="kender-1">Kinder 1</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="kender-2">
+                                        <label class="form-check-label" for="kender-2">Kinder 2</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <span>ADMISSION REQUIREMENTS: (Please check if available)</span>
+                                <div class="admission-requirements">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="report-card">
+                                        <label class="form-check-label" for="report-card">Report Card (Form 138)</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="birth-and-baptismal-certificates">
+                                        <label class="form-check-label" for="birth-and-baptismal-certificates">Birth and Baptismal Certificates for Pre-Elementary and Transferees</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="certificate-of-good-moral-character">
+                                        <label class="form-check-label" for="certificate-of-good-moral-character">Certificated of Good Moral Character if transferee or New Pupil</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="duly-signed-sworn-statement">
+                                        <label class="form-check-label" for="duly-signed-sworn-statement">Duly Signed Sword Statement for Transferees</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="Initial Payment">
+                                        <label class="form-check-label" for="Initial Payment">Initial Payment</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button id="back-student-info" class="btn btn-primary">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="my-4">
+                                <span>ADMISSION REQUIREMENTS: (Please check if available)</span>
+                                <div class="admission-requirements">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="report-card">
+                                        <label class="form-check-label" for="report-card">Report Card (Form 138)</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="birth-and-baptismal-certificates">
+                                        <label class="form-check-label" for="birth-and-baptismal-certificates">Birth and Baptismal Certificates for Pre-Elementary and Transferees</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="certificate-of-good-moral-character">
+                                        <label class="form-check-label" for="certificate-of-good-moral-character">Certificated of Good Moral Character if transferee or New Pupil</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="duly-signed-sworn-statement">
+                                        <label class="form-check-label" for="duly-signed-sworn-statement">Duly Signed Sword Statement for Transferees</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="Initial Payment">
+                                        <label class="form-check-label" for="Initial Payment">Initial Payment</label>
+                                    </div>
+                                </div>
+                            </div>

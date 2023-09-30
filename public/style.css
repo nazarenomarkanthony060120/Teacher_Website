@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Ubuntu&display=swap');
+
+.container-fluid {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    background-color: #fdfdfdfd;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #eeeeee;
+}
+
+
+.title-section {
+    width: 100%;
+    height: 50px;
+    background-color: #e2e1e1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-top: 2px solid rgb(198, 198, 198);
+}
